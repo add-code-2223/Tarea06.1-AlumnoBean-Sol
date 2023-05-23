@@ -16,8 +16,10 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Vector;
 
-import alumno.util.ConnectionManager;
-import alumno.util.MyDataSource;
+import connection.util.ConnectionManager;
+import connection.util.MyDataSource;
+
+
 
 
 
@@ -214,7 +216,7 @@ public class AlumnoDaoBean implements Serializable {
 
 				Alumnos.add(a);
 
-				System.out.println(a);
+				//System.out.println(a);
 			}
 			Alumno a = new Alumno();
 			a = (Alumno) Alumnos.elementAt(1);
